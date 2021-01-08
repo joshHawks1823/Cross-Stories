@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import Hero2 from './components/Hero2'
+import Footer from "./components/Footer";
 
 function App() {
+
+  // const newHr = {
+    
+  //   marginTop: '-4.5rem'
+  //   }
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <div className="jumbotron main-image height">
+        img goes here
+      </div>
+      <div className="container">
+      <Hero />
+      <hr/>
+      <Hero2 />
+      {/* <hr style={newHr} /> */}
+      </div>
+      <Footer/>
+
     </div>
   );
 }
